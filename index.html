@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starlight Reading | Free Online Tarot</title>
+    <meta name="description" content="Free online tarot readings from Starlight Reading. Choose a spread, draw your cards, and reflect with gentle guidance.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Starlight Reading home">
+        <span class="brand-mark">✦</span>
+        <span>
+          <strong>Starlight</strong>
+          <small>Reading</small>
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#readings">Readings</a>
+        <a href="#learn">Learn</a>
+        <a href="#numbers">Numerology</a>
+        <a class="signin" href="#member">Sign In</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="starfield" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Free online tarot guidance</p>
+          <h1>Starlight Reading</h1>
+          <p class="hero-copy">Draw a card, quiet your thoughts, and let a little moonlit perspective meet you where you are.</p>
+          <a class="primary-action" href="#reading-app">Get a Free Reading</a>
+        </div>
+      </section>
+
+      <section class="intro band" id="readings">
+        <div class="section-title">
+          <p class="eyebrow">Online Tarot Readings</p>
+          <h2>Choose the question that is already glowing in your mind.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="icon">☾</span>
+            <h3>Love and Connection</h3>
+            <p>Look at emotional patterns, timing, attraction, and the next gentle step in a relationship.</p>
+          </article>
+          <article>
+            <span class="icon">✧</span>
+            <h3>Past, Present, Future</h3>
+            <p>See how yesterday's lesson, today's choice, and tomorrow's possibility speak to each other.</p>
+          </article>
+          <article>
+            <span class="icon">♢</span>
+            <h3>Celtic Cross</h3>
+            <p>Take a wider view when a situation feels tangled and you want a fuller map.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reader" id="reading-app" aria-labelledby="reader-title">
+        <div class="reader-copy">
+          <p class="eyebrow">Instant card draw</p>
+          <h2 id="reader-title">Your free Starlight Reading</h2>
+          <p>Think of a situation, breathe once, then draw. The cards are for reflection and clarity, not fixed predictions.</p>
+          <button id="drawButton" type="button">Draw Three Cards</button>
+        </div>
+        <div class="cards" id="cards" aria-live="polite">
+          <article class="tarot-card">
+            <span>Past</span>
+            <strong>The Star</strong>
+            <p>Hope returns through patience.</p>
+          </article>
+          <article class="tarot-card">
+            <span>Present</span>
+            <strong>Temperance</strong>
+            <p>Balance is the doorway.</p>
+          </article>
+          <article class="tarot-card">
+            <span>Future</span>
+            <strong>The Sun</strong>
+            <p>Truth makes room for joy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quotes band">
+        <div class="section-title">
+          <p class="eyebrow">Kind words</p>
+          <h2>Readers come for clarity, and stay for calm.</h2>
+        </div>
+        <div class="quote-grid">
+          <blockquote>“It felt personal without being heavy. I left with one clear thing to do next.”</blockquote>
+          <blockquote>“The reading gave me language for what I had been sensing all week.”</blockquote>
+          <blockquote>“Soft, honest, and surprisingly practical. Exactly what I needed tonight.”</blockquote>
+        </div>
+      </section>
+
+      <section class="split">
+        <article id="learn">
+          <p class="eyebrow">Learn Tarot</p>
+          <h2>Card meanings, spreads, and practice prompts</h2>
+          <p>Build your intuition with simple lessons for the major arcana, court cards, suits, and everyday spreads.</p>
+          <a href="#reading-app">Start Practicing</a>
+        </article>
+        <article id="numbers">
+          <p class="eyebrow">Numerology</p>
+          <h2>Find your Life Path Number</h2>
+          <form id="numberForm">
+            <label>
+              First name
+              <input id="firstName" name="firstName" autocomplete="given-name" required>
+            </label>
+            <label>
+              Birth date
+              <input id="birthDate" name="birthDate" type="date" required>
+            </label>
+            <button type="submit">Reveal Number</button>
+          </form>
+          <p class="result" id="numberResult" aria-live="polite"></p>
+        </article>
+      </section>
+    </main>
+
+    <footer id="member">
+      <div>
+        <strong>Starlight Reading</strong>
+        <p>Free reflective tarot tools for moments when your thoughts need a little sky.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#readings">Readings</a>
+        <a href="#learn">Card Meanings</a>
+        <a href="#numbers">Numerology</a>
+        <a href="#top">Back to Top</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
